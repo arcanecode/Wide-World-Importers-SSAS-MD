@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "WWI-SSASMD", "WWI-SSASMD\WWI-SSASMD.dwproj", "{DED1F3FA-6D6A-4958-A0AC-97F8DA3B73B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DED1F3FA-6D6A-4958-A0AC-97F8DA3B73B4}.Development|Default.ActiveCfg = Development
+		{DED1F3FA-6D6A-4958-A0AC-97F8DA3B73B4}.Development|Default.Build.0 = Development
+		{DED1F3FA-6D6A-4958-A0AC-97F8DA3B73B4}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
