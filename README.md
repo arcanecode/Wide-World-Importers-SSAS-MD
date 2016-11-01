@@ -11,4 +11,5 @@ It has some KPIs, they are somewhat unrealisitc but were created such that there
 
 I left most of the attributes and calculations visible, even attributes in heirarchies. I can't predict what people may wish to use for demos, so left them available.
 
-Note there appeared to be some misspellings in the original WideWorldImportersDW database (Orters instead of Orders). I left the misspellings intact when I built the cube for compatibility. 
+11/1/2016
+I added new updates to the date dimension. In the source it only held day, month, and year levels. I added calculated fields in the DSV to add quarters. I also added numeric keys for year/quater and year/month. Finally I added Beginning of Month and Beginning of Quarter dates. 
