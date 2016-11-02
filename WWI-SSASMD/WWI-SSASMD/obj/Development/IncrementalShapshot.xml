@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,21 +19,21 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>yGHweKZIFdYXPuToYjJWNRficvs=10/2/2016 1:18:45 PM10/2/2016 1:02:10 PM</TimeStamp>
+        <TimeStamp>cali+n07jHfVnliWokGzufDp89g=11/1/2016 9:26:41 AM10/2/2016 1:02:10 PM</TimeStamp>
         <ID>
           <String>Wide World Importers DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>NkZxnx5kYxL7T8dsQm2SZfGZwF4=10/5/2016 5:47:57 PM10/2/2016 1:03:26 PM</TimeStamp>
+        <TimeStamp>L+/PuQMyxwTKsF20OHoNEPTi32M=10/31/2016 3:01:36 PM10/2/2016 1:03:26 PM</TimeStamp>
         <ID>
           <String>Wide World Importers DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>y9SFqwiouqtgWHWMAsTHwxvkFk0=10/5/2016 6:40:29 PM10/2/2016 1:05:58 PM</TimeStamp>
+        <TimeStamp>p7xlIGes/xixwiO7EH9x2vmKa/I=10/31/2016 3:26:17 PM10/2/2016 1:05:58 PM</TimeStamp>
         <ID>
           <String>Date</String>
         </ID>
@@ -103,7 +103,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>X4cBTPYlgGvu9yr6YomL9oOOlJc=10/5/2016 6:33:42 PM10/2/2016 2:08:21 PMhdwqGgxZJr+lu+MIfAC7wjshM0U=10/2/2016 7:33:15 PM10/2/2016 2:08:22 PM</TimeStamp>
+        <TimeStamp>oYKXUJXn7i4+ToJOme/rfweDbiQ=10/31/2016 2:19:29 PM10/2/2016 2:08:21 PMhdwqGgxZJr+lu+MIfAC7wjshM0U=10/2/2016 7:33:15 PM10/2/2016 2:08:22 PM</TimeStamp>
         <ID>
           <String>Wide World Importers</String>
         </ID>
@@ -120,5 +120,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2016-10-06T16:38:11.02Z</LastDeployed>
+  <LastDeployed>2016-11-01T14:27:09.19Z</LastDeployed>
 </DeploymentSnapshot>
