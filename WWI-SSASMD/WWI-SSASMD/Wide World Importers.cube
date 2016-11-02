@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="62" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8715" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="26167" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="62" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8715" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33443" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -604,6 +604,24 @@
         <Attribute dwd:design-time-name="b549d9f2-6406-4de9-a9bb-95ee8ec9d9de">
           <AttributeID>Fiscal Month Label</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="778b4d1c-81c9-4f51-83e4-a6388cfcd889">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4774e71e-0939-4696-8c41-c33b42739a3e">
+          <AttributeID>Quarter Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="601bedca-80b9-4f0b-8a4c-b8ff3bc93ce6">
+          <AttributeID>Year Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf9f44e9-0489-48fc-8b0e-3811fc86851e">
+          <AttributeID>Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b36fc1de-407a-4212-afbb-27f5a8753f3b">
+          <AttributeID>Beginning Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="76a291d3-bdd2-447a-a9ca-32a233e15f21">
+          <AttributeID>Beginning Of Month</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="6156dde5-28a7-4039-a06a-f3d29c2f8e91">
@@ -617,6 +635,9 @@
         </Hierarchy>
         <Hierarchy dwd:design-time-name="f962ab63-e962-4ccd-8429-d65a648b0e18">
           <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="bccc5975-72f3-4001-a831-4a284050deb3">
+          <HierarchyID>Hierarchy 4</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -658,6 +679,24 @@
         <Attribute dwd:design-time-name="5d61179d-f325-4694-a983-b7e8d617aff7">
           <AttributeID>Fiscal Month Label</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="6e8b8401-eb60-4edb-8821-8b0ec1448cc5">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb652228-eb4a-4707-a607-7e81d9d001cb">
+          <AttributeID>Quarter Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f70d894-b88a-43d9-b557-a971f74f7510">
+          <AttributeID>Year Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52289a13-d5ca-4f90-bdf4-ab90210ac0b8">
+          <AttributeID>Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="757c107a-0dc5-4574-a253-4b525809baf5">
+          <AttributeID>Beginning Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e13e8867-74fa-4c23-9189-6b1d6f18c908">
+          <AttributeID>Beginning Of Month</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="6c53e308-1237-41fe-b10b-2b88a44ed472">
@@ -671,6 +710,9 @@
         </Hierarchy>
         <Hierarchy dwd:design-time-name="379df9b2-5555-472a-8c03-b6cfe523ebc5">
           <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="605eb4a5-c2dd-4d6f-89d7-9df231a9a1e5">
+          <HierarchyID>Hierarchy 4</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -867,6 +909,24 @@
         <Attribute dwd:design-time-name="12788dd7-5c94-4033-ada8-e3bd49ea1b40">
           <AttributeID>Fiscal Month Label</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="69c7df66-b531-4f14-bfc5-c8411ff9a542">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e8bf0e98-0513-44d7-9a7f-9b04e4edfacd">
+          <AttributeID>Quarter Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24077acf-5535-44b6-927d-a2e802a7f24c">
+          <AttributeID>Year Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6c02124-b2a4-421a-b69c-29d60e5b08a2">
+          <AttributeID>Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ff9f949-cd6c-46ca-b777-3b42154f590a">
+          <AttributeID>Beginning Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6dfa856-b317-429e-9925-0ebf03c53cd6">
+          <AttributeID>Beginning Of Month</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="1d798a84-522b-4495-a1e5-f8e4c51cedf5">
@@ -880,6 +940,9 @@
         </Hierarchy>
         <Hierarchy dwd:design-time-name="1f4811f7-3ad5-4237-8a34-11822b8f396c">
           <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="6b8e731c-b0e8-491a-8415-3fc0e14a7b12">
+          <HierarchyID>Hierarchy 4</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -921,6 +984,24 @@
         <Attribute dwd:design-time-name="ec3ed619-00e3-461e-82bf-c12dcb81d67a">
           <AttributeID>Fiscal Month Label</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="19336019-cab1-4ef5-9ac7-dec345d25958">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="74d4238f-f3db-4684-96f2-611f4b21bfb0">
+          <AttributeID>Quarter Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93b5eaf3-d218-4ea6-abc1-7199cf819762">
+          <AttributeID>Year Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2efd72f8-3957-4788-8d00-abf22d93d721">
+          <AttributeID>Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9c9729c-4c6b-433e-8a59-5dfe50e9af07">
+          <AttributeID>Beginning Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="048731b2-2178-4435-bb3b-3adeb334a6aa">
+          <AttributeID>Beginning Of Month</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="bf4e6b1e-e51c-4b9f-98a0-411c4406188a">
@@ -934,6 +1015,9 @@
         </Hierarchy>
         <Hierarchy dwd:design-time-name="94295c86-d1b0-4bf7-b79f-12a1477d9bb0">
           <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="8c5137ea-8a47-4425-90ef-b99050007115">
+          <HierarchyID>Hierarchy 4</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -999,6 +1083,24 @@
         <Attribute dwd:design-time-name="24646383-3a9d-4a7f-8cac-e712671d6dff">
           <AttributeID>Fiscal Month Label</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="f44fe1a1-fbdb-47e8-9515-6f0335a0eacd">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a27b27b-e4ed-45bf-a460-74172a634aa3">
+          <AttributeID>Quarter Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="021d59a6-f1f4-4763-b932-973aef523042">
+          <AttributeID>Year Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e29496f4-e6f1-4088-87ad-016e2971bb06">
+          <AttributeID>Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a8e8a4b-8593-4fb6-851e-da090e95df63">
+          <AttributeID>Beginning Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="174260fc-4b58-47d2-b93a-6cec11d8d15a">
+          <AttributeID>Beginning Of Month</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="6a3000ff-63dc-44fb-8219-6218bdab259f">
@@ -1012,6 +1114,9 @@
         </Hierarchy>
         <Hierarchy dwd:design-time-name="90255cb2-48ca-4236-aeb4-b0fa468d48f4">
           <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="3bb6eee4-bd6d-464a-8fec-b7999085917e">
+          <HierarchyID>Hierarchy 4</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>

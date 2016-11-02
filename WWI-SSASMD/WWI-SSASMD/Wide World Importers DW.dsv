@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="76" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="104" scrolltop="9347" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29766" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="76" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="104" scrolltop="15579" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31141" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -38,9 +38,9 @@
                 <layoutmanager>
                   <ddsxmlobj />
                 </layoutmanager>
-                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="16490" top="21254" logicalid="38" controlid="1" masterid="0" hint1="0" hint2="0" width="4260" height="9128" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="16490" top="21254" logicalid="38" controlid="1" masterid="0" hint1="0" hint2="0" width="4260" height="12012" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
-                    <ddsxmlobjectstreaminitwrapper binary="000c0000a4100000a8230000" />
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000a4100000ec2e0000" />
                   </control>
                   <layoutobject>
                     <ddsxmlobj>
@@ -357,7 +357,7 @@
                     <point x="8281" y="13816" />
                   </connector>
                 </ddscontrol>
-                <ddscontrol controlprogid="MSDDS.Polyline" left="13061" top="21019" logicalid="59" controlid="22" masterid="0" hint1="0" hint2="0" width="3729" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="MSDDS.Polyline" left="13061" top="21216" logicalid="59" controlid="22" masterid="0" hint1="0" hint2="0" width="3729" height="944" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
                       <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -371,8 +371,8 @@
                     </ddsxmlobj>
                   </layoutobject>
                   <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="19" sourceattachpoint="14" destattachpoint="47" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                    <point x="16490" y="21418" />
-                    <point x="14926" y="21418" />
+                    <point x="16490" y="21760" />
+                    <point x="14926" y="21760" />
                     <point x="14926" y="21516" />
                     <point x="13361" y="21516" />
                   </connector>
@@ -618,7 +618,7 @@
                     <point x="1593" y="17833" />
                   </connector>
                 </ddscontrol>
-                <ddscontrol controlprogid="MSDDS.Polyline" left="3986" top="21165" logicalid="73" controlid="36" masterid="0" hint1="0" hint2="0" width="12804" height="1203" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="MSDDS.Polyline" left="3986" top="21165" logicalid="73" controlid="36" masterid="0" hint1="0" hint2="0" width="12804" height="995" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
                       <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -631,9 +631,9 @@
                       <property name="VisibleAP" value="0" vartype="3" />
                     </ddsxmlobj>
                   </layoutobject>
-                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="34" sourceattachpoint="16" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                    <point x="16490" y="21968" />
-                    <point x="10388" y="21968" />
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="34" sourceattachpoint="14" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="16490" y="21760" />
+                    <point x="10388" y="21760" />
                     <point x="10388" y="21465" />
                     <point x="4286" y="21465" />
                   </connector>
@@ -663,7 +663,7 @@
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>104</DiagramViewPortLeft>
-            <DiagramViewPortTop>9347</DiagramViewPortTop>
+            <DiagramViewPortTop>15579</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -744,10 +744,47 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="Month_x0020_Year" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="[Short Month] + ' ' + CAST([Calendar Year] AS NVARCHAR)" msprop:IsLogical="True" msprop:design-time-name="f54c3ffd-ec79-492b-8231-df7e557a9df3" msprop:DbColumnName="Month Year" minOccurs="0">
+                  <xs:element name="Month_x0020_Year" msdata:ReadOnly="true" msprop:design-time-name="f54c3ffd-ec79-492b-8231-df7e557a9df3" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Month Year" msprop:ComputedColumnExpression="[Short Month] + ' ' + CAST([Calendar Year] AS NVARCHAR)" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="34" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter_x0020_Number" msdata:ReadOnly="true" msprop:design-time-name="d57df7ce-88b4-469c-9de7-c30e76cdaf3d" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter Number" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN 1&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN 2&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN 3&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN 4&#xD;&#xA;ELSE 5&#xD;&#xA;END" type="xs:int" />
+                  <xs:element name="Quarter_x0020_Year_x0020_Key" msdata:ReadOnly="true" msprop:design-time-name="73d8f09f-ca0a-4e14-bf84-7849a6edbb83" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter Year Key" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN ([Calendar Year] * 10) + 1&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN ([Calendar Year] * 10) + 2&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN ([Calendar Year] * 10) + 3&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN ([Calendar Year] * 10) + 4&#xD;&#xA;ELSE ([Calendar Year] * 10) + 5&#xD;&#xA;END" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter_x0020_Year" msdata:ReadOnly="true" msprop:design-time-name="32b24510-a542-4c0f-b16e-afb6dbff16c1" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter Year" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN 'Q1 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN 'Q2 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN 'Q3 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN 'Q4 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;ELSE 'N/A ' + CAST([Calendar Year] AS NVARCHAR) &#xD;&#xA;END" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="34" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msdata:ReadOnly="true" msprop:design-time-name="1bce21b6-8ad0-4be5-9941-1575dbbdfa6b" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN 'Q1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN 'Q2'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN 'Q3'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN 'Q4'&#xD;&#xA;ELSE 'N/A' &#xD;&#xA;END">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year_x0020_Quarter" msdata:ReadOnly="true" msprop:design-time-name="155b558e-b471-4cb5-bbe2-356ebc9ec713" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Year Quarter" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q2'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q3'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q4'&#xD;&#xA;ELSE CAST([Calendar Year] AS NVARCHAR) + '-N/A'&#xD;&#xA;END" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="34" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Beginning_x0020_of_x0020_Quarter" msdata:ReadOnly="true" msprop:design-time-name="650ae3ac-aabf-4eb6-b792-78de5871ae78" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Beginning of Quarter" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN  CAST([Calendar Year] AS VARCHAR) + '-1-1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN CAST([Calendar Year] AS VARCHAR) + '-4-1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN CAST([Calendar Year] AS VARCHAR) + '-7-1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN CAST([Calendar Year] AS VARCHAR) + '-10-1'&#xD;&#xA;ELSE CAST([Calendar Year] AS VARCHAR) + '/1/1'&#xD;&#xA;END" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Beginning_x0020_of_x0020_Month" msdata:ReadOnly="true" msprop:design-time-name="c60b73da-d09e-4ace-9c82-b1df5520b39a" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Beginning of Month" msprop:ComputedColumnExpression="CAST([Calendar Year] AS VARCHAR) + '-' + CAST([Calendar Month Number] AS VARCHAR)+ '-1'" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="63" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
@@ -1290,101 +1327,101 @@
           <xs:field xpath="Purchase_x0020_Key" />
           <xs:field xpath="Date_x0020_Key" />
         </xs:unique>
-        <xs:keyref name="FK_Fact_Purchase_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
+        <xs:keyref name="FK_Fact_Purchase_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
           <xs:selector xpath=".//Fact_Purchase" />
-          <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+          <xs:field xpath="Supplier_x0020_Key" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Purchase_Date_Key_Dimension_Date" refer="Constraint1">
           <xs:selector xpath=".//Fact_Purchase" />
           <xs:field xpath="Date_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Purchase_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
+        <xs:keyref name="FK_Fact_Purchase_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
           <xs:selector xpath=".//Fact_Purchase" />
-          <xs:field xpath="Supplier_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Order_Picker_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
-          <xs:selector xpath=".//Fact_Order" />
-          <xs:field xpath="Picker_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Order_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
-          <xs:selector xpath=".//Fact_Order" />
           <xs:field xpath="Stock_x0020_Item_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Order_Order_Date_Key_Dimension_Date" refer="Constraint1">
-          <xs:selector xpath=".//Fact_Order" />
-          <xs:field xpath="Order_x0020_Date_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Order_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
-          <xs:selector xpath=".//Fact_Order" />
-          <xs:field xpath="City_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Order_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
-          <xs:selector xpath=".//Fact_Order" />
-          <xs:field xpath="Customer_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Order_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
-          <xs:selector xpath=".//Fact_Order" />
-          <xs:field xpath="Salesperson_x0020_Key" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Order_Picked_Date_Key_Dimension_Date" refer="Constraint1">
           <xs:selector xpath=".//Fact_Order" />
           <xs:field xpath="Picked_x0020_Date_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Transaction_Payment_Method_Key_Dimension_Payment_x0020_Method" refer="Dimension_Payment_x0020_Method_Constraint1">
-          <xs:selector xpath=".//Fact_Transaction" />
-          <xs:field xpath="Payment_x0020_Method_x0020_Key" />
+        <xs:keyref name="FK_Fact_Order_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
+          <xs:selector xpath=".//Fact_Order" />
+          <xs:field xpath="Salesperson_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Transaction_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
-          <xs:selector xpath=".//Fact_Transaction" />
-          <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
+        <xs:keyref name="FK_Fact_Order_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+          <xs:selector xpath=".//Fact_Order" />
+          <xs:field xpath="Customer_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Transaction_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
-          <xs:selector xpath=".//Fact_Transaction" />
-          <xs:field xpath="Supplier_x0020_Key" />
+        <xs:keyref name="FK_Fact_Order_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
+          <xs:selector xpath=".//Fact_Order" />
+          <xs:field xpath="City_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Transaction_Date_Key_Dimension_Date" refer="Constraint1">
-          <xs:selector xpath=".//Fact_Transaction" />
-          <xs:field xpath="Date_x0020_Key" />
+        <xs:keyref name="FK_Fact_Order_Order_Date_Key_Dimension_Date" refer="Constraint1">
+          <xs:selector xpath=".//Fact_Order" />
+          <xs:field xpath="Order_x0020_Date_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Transaction_Transaction_Type_Key_Dimension_Transaction_x0020_Type" refer="Dimension_Transaction_x0020_Type_Constraint1">
-          <xs:selector xpath=".//Fact_Transaction" />
-          <xs:field xpath="Transaction_x0020_Type_x0020_Key" />
+        <xs:keyref name="FK_Fact_Order_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
+          <xs:selector xpath=".//Fact_Order" />
+          <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Order_Picker_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
+          <xs:selector xpath=".//Fact_Order" />
+          <xs:field xpath="Picker_x0020_Key" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Transaction_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
           <xs:selector xpath=".//Fact_Transaction" />
           <xs:field xpath="Customer_x0020_Key" />
         </xs:keyref>
+        <xs:keyref name="FK_Fact_Transaction_Transaction_Type_Key_Dimension_Transaction_x0020_Type" refer="Dimension_Transaction_x0020_Type_Constraint1">
+          <xs:selector xpath=".//Fact_Transaction" />
+          <xs:field xpath="Transaction_x0020_Type_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Transaction_Date_Key_Dimension_Date" refer="Constraint1">
+          <xs:selector xpath=".//Fact_Transaction" />
+          <xs:field xpath="Date_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Transaction_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
+          <xs:selector xpath=".//Fact_Transaction" />
+          <xs:field xpath="Supplier_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Transaction_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+          <xs:selector xpath=".//Fact_Transaction" />
+          <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Transaction_Payment_Method_Key_Dimension_Payment_x0020_Method" refer="Dimension_Payment_x0020_Method_Constraint1">
+          <xs:selector xpath=".//Fact_Transaction" />
+          <xs:field xpath="Payment_x0020_Method_x0020_Key" />
+        </xs:keyref>
         <xs:keyref name="FK_Fact_Stock_Holding_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
           <xs:selector xpath=".//Fact_Stock_x0020_Holding" />
           <xs:field xpath="Stock_x0020_Item_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Sale_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+        <xs:keyref name="FK_Fact_Sale_Delivery_Date_Key_Dimension_Date" refer="Constraint1">
           <xs:selector xpath=".//Fact_Sale" />
-          <xs:field xpath="Customer_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Sale_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
-          <xs:selector xpath=".//Fact_Sale" />
-          <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Sale_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
-          <xs:selector xpath=".//Fact_Sale" />
-          <xs:field xpath="Salesperson_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Sale_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
-          <xs:selector xpath=".//Fact_Sale" />
-          <xs:field xpath="City_x0020_Key" />
-        </xs:keyref>
-        <xs:keyref name="FK_Fact_Sale_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
-          <xs:selector xpath=".//Fact_Sale" />
-          <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+          <xs:field xpath="Delivery_x0020_Date_x0020_Key" />
         </xs:keyref>
         <xs:keyref name="FK_Fact_Sale_Invoice_Date_Key_Dimension_Date" refer="Constraint1">
           <xs:selector xpath=".//Fact_Sale" />
           <xs:field xpath="Invoice_x0020_Date_x0020_Key" />
         </xs:keyref>
-        <xs:keyref name="FK_Fact_Sale_Delivery_Date_Key_Dimension_Date" refer="Constraint1">
+        <xs:keyref name="FK_Fact_Sale_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
           <xs:selector xpath=".//Fact_Sale" />
-          <xs:field xpath="Delivery_x0020_Date_x0020_Key" />
+          <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Sale_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
+          <xs:selector xpath=".//Fact_Sale" />
+          <xs:field xpath="City_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Sale_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
+          <xs:selector xpath=".//Fact_Sale" />
+          <xs:field xpath="Salesperson_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Sale_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+          <xs:selector xpath=".//Fact_Sale" />
+          <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Sale_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+          <xs:selector xpath=".//Fact_Sale" />
+          <xs:field xpath="Customer_x0020_Key" />
         </xs:keyref>
       </xs:element>
     </xs:schema>

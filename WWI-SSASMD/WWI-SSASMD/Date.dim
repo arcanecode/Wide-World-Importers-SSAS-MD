@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4345" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10292" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4345" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10716" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -75,46 +75,72 @@
                 <Attribute Id="Date" />
                 <Attribute Id="Calendar Month Label" />
                 <Attribute Id="Calendar Year Label" />
+                <Attribute Id="Day Number" />
                 <Attribute Id="Calendar Month Number" />
                 <Attribute Id="Month Year Key" />
+                <Attribute Id="Year Quarter" />
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Fiscal Month Label" Expanded="false">
+            <Shape Id="Beginning Of Month" Expanded="false">
               <Attributes>
-                <Attribute Id="Fiscal Month Label" />
+                <Attribute Id="Beginning Of Month" />
               </Attributes>
               <Position x="203" y="20" />
             </Shape>
-            <Shape Id="Fiscal Year" Expanded="false">
+            <Shape Id="Beginning Of Quarter" Expanded="false">
               <Attributes>
-                <Attribute Id="Fiscal Year" />
+                <Attribute Id="Beginning Of Quarter" />
               </Attributes>
               <Position x="387" y="20" />
-            </Shape>
-            <Shape Id="Month Year" Expanded="false">
-              <Attributes>
-                <Attribute Id="Month Year" />
-              </Attributes>
-              <Position x="203" y="68" />
             </Shape>
             <Shape Id="Calendar Year" Expanded="false">
               <Attributes>
                 <Attribute Id="Calendar Year" />
               </Attributes>
+              <Position x="571" y="20" />
+            </Shape>
+            <Shape Id="Fiscal Month Label" Expanded="false">
+              <Attributes>
+                <Attribute Id="Fiscal Month Label" />
+              </Attributes>
+              <Position x="203" y="68" />
+            </Shape>
+            <Shape Id="Fiscal Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Fiscal Year" />
+              </Attributes>
               <Position x="387" y="68" />
+            </Shape>
+            <Shape Id="Month Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Month Year" />
+              </Attributes>
+              <Position x="203" y="116" />
+            </Shape>
+            <Shape Id="Quarter Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Quarter Year" />
+              </Attributes>
+              <Position x="387" y="116" />
             </Shape>
             <Shape Id="Short Month" Expanded="false">
               <Attributes>
                 <Attribute Id="Short Month" />
               </Attributes>
-              <Position x="203" y="116" />
+              <Position x="203" y="164" />
+            </Shape>
+            <Shape Id="Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Quarter" />
+              </Attributes>
+              <Position x="387" y="164" />
             </Shape>
             <Shape Id="Month" Expanded="false">
               <Attributes>
                 <Attribute Id="Month" />
               </Attributes>
-              <Position x="203" y="164" />
+              <Position x="203" y="212" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -127,7 +153,7 @@
     <DataSourceViewID>Wide World Importers DW</DataSourceViewID>
   </Source>
   <Type>Time</Type>
-  <UnknownMember>Visible</UnknownMember>
+  <UnknownMember>Hidden</UnknownMember>
   <ErrorConfiguration dwd:design-time-name="61c7f0a8-ff40-41d5-a892-2e42ce9c7678">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
@@ -183,10 +209,23 @@
           <AttributeID>Fiscal Month Label</AttributeID>
           <Name>Fiscal Month</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e63187b-5579-4b02-ba73-382eb598116c">
+          <AttributeID>Year Quarter</AttributeID>
+          <Name>Year Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b54a246-bc25-474f-b38d-e87ba231392b">
+          <AttributeID>Day Number</AttributeID>
+          <Name>Day Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8fee348a-ac81-4ec3-929a-3858b7f5e826">
+          <AttributeID>Beginning Of Month</AttributeID>
+          <Name>Beginning Of Month</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString></ddl300_300:FormatString>
     </Attribute>
     <Attribute dwd:design-time-name="84534d08-0059-430a-942f-0ee79301ca03">
       <ID>Month</ID>
@@ -217,9 +256,9 @@
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="be2eccd5-12b6-4b36-83ed-8fc023de1cd5">
-          <AttributeID>Calendar Year</AttributeID>
-          <Name>Year</Name>
+        <AttributeRelationship dwd:design-time-name="5535e4f6-e132-48ee-8738-3a14350b2180">
+          <AttributeID>Quarter</AttributeID>
+          <Name>Quarter</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -262,9 +301,9 @@
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="0d095538-baa7-43ec-932b-b8e03d23beb3">
-          <AttributeID>Calendar Year</AttributeID>
-          <Name>Year</Name>
+        <AttributeRelationship dwd:design-time-name="a02fe5c3-f6b8-48dd-ad1f-a432bd51f028">
+          <AttributeID>Quarter</AttributeID>
+          <Name>Quarter</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -368,9 +407,9 @@
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="fe89ee96-7197-401b-9ac1-b96e30a78337">
-          <AttributeID>Calendar Year</AttributeID>
-          <Name>Year</Name>
+        <AttributeRelationship dwd:design-time-name="77ac9780-d679-40ef-85d3-b314644a5925">
+          <AttributeID>Quarter Year</AttributeID>
+          <Name>Quarter Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -461,6 +500,163 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="dd7673ba-7e7e-4da4-88c2-4c09e220bb97">
+      <ID>Quarter</ID>
+      <Name>Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd665050-407a-479b-9d49-94878487ed1a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b055109a-6355-4cf4-825d-0412bdff9e3b">
+            <TableID>Dimension_Date</TableID>
+            <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4720d35f-48e0-48f0-aedc-75fd33185abc">
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="40932a35-ad45-4064-94bd-1d73a706aa0f">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Quarter</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9db7b725-a57b-47c0-8e21-e47668090433">
+          <AttributeID>Calendar Year</AttributeID>
+          <Name>Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="06b167a6-b2a2-43cc-aa79-6aaf6aeadde6">
+      <ID>Quarter Year</ID>
+      <Name>Quarter Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f210d12-244c-4f9b-908c-b7475318b3e6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6b51cbb-3560-4d7c-81cb-a06882151b70">
+            <TableID>Dimension_Date</TableID>
+            <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9e0b12e3-fe93-4200-b9db-5a3025c80d1a">
+        <DataType>WChar</DataType>
+        <DataSize>34</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fd8e17f3-d056-4101-b4cf-7fee331ef69c">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Quarter_x0020_Year</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b9a0edaa-2bdd-4f3f-a9dd-19324ab6a9be">
+          <AttributeID>Calendar Year</AttributeID>
+          <Name>Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cd849019-d518-4301-8d5b-c9edb23e791e">
+      <ID>Year Quarter</ID>
+      <Name>Year Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1856869a-6225-4728-900b-d887a85a1318">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3322b1b9-89c2-4611-b828-d9d759077bc7">
+            <TableID>Dimension_Date</TableID>
+            <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ec75a712-1ed0-4c12-8762-6db32def323f">
+        <DataType>WChar</DataType>
+        <DataSize>34</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ba118718-0dd6-4d13-a1df-3b266ed7b059">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Year_x0020_Quarter</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0f6cb0e-cee4-4ca9-85f9-b3deb71408b5">
+      <ID>Day Number</ID>
+      <Name>Day Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba567c76-e899-4b14-826a-6313e9b44355">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0eac8e6-1711-446f-867b-9a178797a16e">
+            <TableID>Dimension_Date</TableID>
+            <ColumnID>Day_x0020_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aefb9da5-39f5-4d66-90de-16cae619119b">
+      <ID>Beginning Of Quarter</ID>
+      <Name>Beginning Of Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40e91026-e9e9-4079-b76e-7dbbfa3c5efa">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b55383d-2460-4ac1-9d9e-a629e7264656">
+            <TableID>Dimension_Date</TableID>
+            <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0121c092-bd94-4c80-9f39-486a280dfd04">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4c8eea83-d103-42ae-8d52-57f546c55f44">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Beginning_x0020_of_x0020_Quarter</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e9149ce6-df88-4468-a459-1a25f0a9665b">
+          <AttributeID>Calendar Year</AttributeID>
+          <Name>Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString></ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d6ff27f-e633-4584-909f-a5e71309bd3e">
+      <ID>Beginning Of Month</ID>
+      <Name>Beginning Of Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61bd9385-fcd3-4183-a9d0-a5adb41e2115">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2bba786-294c-4310-bdb6-07c28b416bd1">
+            <TableID>Dimension_Date</TableID>
+            <ColumnID>Month_x0020_Year_x0020_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a4ef4e9c-bcfd-4f6f-92a2-5229fc40d4f0">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="93cc3ba7-a606-4898-8ca3-07c2fb75b638">
+          <TableID>Dimension_Date</TableID>
+          <ColumnID>Beginning_x0020_of_x0020_Month</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ecb2dd84-78ee-4317-8105-5557d2e57ccd">
+          <AttributeID>Beginning Of Quarter</AttributeID>
+          <Name>Beginning Of Quarter</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString></ddl300_300:FormatString>
+    </Attribute>
   </Attributes>
   <Hierarchies>
     <Hierarchy dwd:design-time-name="1c428031-d851-4c95-824e-ed0673847c72">
@@ -471,6 +667,11 @@
           <ID>Year</ID>
           <Name>Year</Name>
           <SourceAttributeID>Calendar Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="30e39325-f443-44cf-bf83-45745d788d21">
+          <ID>Quarter</ID>
+          <Name>Quarter</Name>
+          <SourceAttributeID>Quarter</SourceAttributeID>
         </Level>
         <Level dwd:design-time-name="839638f2-229d-4f47-a201-f69135aaf3c9">
           <ID>Month</ID>
@@ -493,6 +694,11 @@
           <Name>Year</Name>
           <SourceAttributeID>Calendar Year</SourceAttributeID>
         </Level>
+        <Level dwd:design-time-name="f888f282-5683-4e48-b720-9e1f02f69d62">
+          <ID>Quarter</ID>
+          <Name>Quarter</Name>
+          <SourceAttributeID>Quarter</SourceAttributeID>
+        </Level>
         <Level dwd:design-time-name="aee9ffda-ca5d-42a0-a078-30135bb848a7">
           <ID>Month Abbreviation</ID>
           <Name>Month Abbreviation</Name>
@@ -513,6 +719,11 @@
           <ID>Year</ID>
           <Name>Year</Name>
           <SourceAttributeID>Calendar Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="772623c3-1f7f-488c-90e8-e1a4bb366441">
+          <ID>Quarter Year</ID>
+          <Name>Quarter Year</Name>
+          <SourceAttributeID>Quarter Year</SourceAttributeID>
         </Level>
         <Level dwd:design-time-name="b48a7308-b9b7-41ee-abba-4936b8076cac">
           <ID>Month Year</ID>
@@ -544,6 +755,27 @@
           <ID>Date</ID>
           <Name>Date</Name>
           <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5d01dbcd-473d-4e31-bcc4-a7423aded5e4">
+      <ID>Hierarchy 4</ID>
+      <Name>Calendar Beginning Time Period</Name>
+      <Levels>
+        <Level dwd:design-time-name="4a03fb13-465d-464c-9fef-9059c37f739e">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <SourceAttributeID>Calendar Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3dfca247-b579-43b9-b532-33c9cb89b69a">
+          <ID>Beginning Of Quarter</ID>
+          <Name>Beginning Of Quarter</Name>
+          <SourceAttributeID>Beginning Of Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="805ccbd7-c8c7-46bf-80e8-4457ca000422">
+          <ID>Beginning Of Month</ID>
+          <Name>Beginning Of Month</Name>
+          <SourceAttributeID>Beginning Of Month</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
