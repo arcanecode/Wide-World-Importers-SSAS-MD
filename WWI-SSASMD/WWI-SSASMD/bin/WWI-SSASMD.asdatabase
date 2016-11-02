@@ -21,7 +21,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4345" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10292" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4345" scrolltop="-8017" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12488" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -88,46 +88,72 @@
                     <Attribute Id="Date" />
                     <Attribute Id="Calendar Month Label" />
                     <Attribute Id="Calendar Year Label" />
+                    <Attribute Id="Day Number" />
                     <Attribute Id="Calendar Month Number" />
                     <Attribute Id="Month Year Key" />
+                    <Attribute Id="Year Quarter" />
                   </Attributes>
                   <Position x="20" y="20" />
                 </Shape>
-                <Shape Id="Fiscal Month Label" Expanded="false">
+                <Shape Id="Beginning Of Month" Expanded="false">
                   <Attributes>
-                    <Attribute Id="Fiscal Month Label" />
+                    <Attribute Id="Beginning Of Month" />
                   </Attributes>
                   <Position x="203" y="20" />
                 </Shape>
-                <Shape Id="Fiscal Year" Expanded="false">
+                <Shape Id="Beginning Of Quarter" Expanded="false">
                   <Attributes>
-                    <Attribute Id="Fiscal Year" />
+                    <Attribute Id="Beginning Of Quarter" />
                   </Attributes>
                   <Position x="387" y="20" />
-                </Shape>
-                <Shape Id="Month Year" Expanded="false">
-                  <Attributes>
-                    <Attribute Id="Month Year" />
-                  </Attributes>
-                  <Position x="203" y="68" />
                 </Shape>
                 <Shape Id="Calendar Year" Expanded="false">
                   <Attributes>
                     <Attribute Id="Calendar Year" />
                   </Attributes>
+                  <Position x="571" y="20" />
+                </Shape>
+                <Shape Id="Fiscal Month Label" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Fiscal Month Label" />
+                  </Attributes>
+                  <Position x="203" y="68" />
+                </Shape>
+                <Shape Id="Fiscal Year" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Fiscal Year" />
+                  </Attributes>
                   <Position x="387" y="68" />
+                </Shape>
+                <Shape Id="Month Year" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Month Year" />
+                  </Attributes>
+                  <Position x="203" y="116" />
+                </Shape>
+                <Shape Id="Quarter Year" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Quarter Year" />
+                  </Attributes>
+                  <Position x="387" y="116" />
                 </Shape>
                 <Shape Id="Short Month" Expanded="false">
                   <Attributes>
                     <Attribute Id="Short Month" />
                   </Attributes>
-                  <Position x="203" y="116" />
+                  <Position x="203" y="164" />
+                </Shape>
+                <Shape Id="Quarter" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Quarter" />
+                  </Attributes>
+                  <Position x="387" y="164" />
                 </Shape>
                 <Shape Id="Month" Expanded="false">
                   <Attributes>
                     <Attribute Id="Month" />
                   </Attributes>
-                  <Position x="203" y="164" />
+                  <Position x="203" y="212" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -140,7 +166,7 @@
         <DataSourceViewID>Wide World Importers DW</DataSourceViewID>
       </Source>
       <Type>Time</Type>
-      <UnknownMember>Visible</UnknownMember>
+      <UnknownMember>Hidden</UnknownMember>
       <ErrorConfiguration>
         <KeyNotFound>ReportAndStop</KeyNotFound>
         <KeyDuplicate>ReportAndStop</KeyDuplicate>
@@ -196,10 +222,23 @@
               <AttributeID>Fiscal Month Label</AttributeID>
               <Name>Fiscal Month</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Year Quarter</AttributeID>
+              <Name>Year Quarter</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Day Number</AttributeID>
+              <Name>Day Number</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Beginning Of Month</AttributeID>
+              <Name>Beginning Of Month</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+          <ddl300_300:FormatString></ddl300_300:FormatString>
         </Attribute>
         <Attribute>
           <ID>Month</ID>
@@ -231,8 +270,8 @@
           </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Calendar Year</AttributeID>
-              <Name>Year</Name>
+              <AttributeID>Quarter</AttributeID>
+              <Name>Quarter</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -276,8 +315,8 @@
           </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Calendar Year</AttributeID>
-              <Name>Year</Name>
+              <AttributeID>Quarter</AttributeID>
+              <Name>Quarter</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -382,8 +421,8 @@
           </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Calendar Year</AttributeID>
-              <Name>Year</Name>
+              <AttributeID>Quarter Year</AttributeID>
+              <Name>Quarter Year</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -474,6 +513,163 @@
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
+        <Attribute>
+          <ID>Quarter</ID>
+          <Name>Quarter</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Date</TableID>
+                <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>3</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Quarter</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Calendar Year</AttributeID>
+              <Name>Year</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Quarter Year</ID>
+          <Name>Quarter Year</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Date</TableID>
+                <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>34</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Quarter_x0020_Year</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Calendar Year</AttributeID>
+              <Name>Year</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Year Quarter</ID>
+          <Name>Year Quarter</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Date</TableID>
+                <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>34</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Year_x0020_Quarter</ColumnID>
+            </Source>
+          </NameColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Day Number</ID>
+          <Name>Day Number</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Date</TableID>
+                <ColumnID>Day_x0020_Number</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Beginning Of Quarter</ID>
+          <Name>Beginning Of Quarter</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Date</TableID>
+                <ColumnID>Quarter_x0020_Year_x0020_Key</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Beginning_x0020_of_x0020_Quarter</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Calendar Year</AttributeID>
+              <Name>Year</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+          <ddl300_300:FormatString></ddl300_300:FormatString>
+        </Attribute>
+        <Attribute>
+          <ID>Beginning Of Month</ID>
+          <Name>Beginning Of Month</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>32</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>Dimension_Date</TableID>
+                <ColumnID>Month_x0020_Year_x0020_Key</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>Dimension_Date</TableID>
+              <ColumnID>Beginning_x0020_of_x0020_Month</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Beginning Of Quarter</AttributeID>
+              <Name>Beginning Of Quarter</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+          <ddl300_300:FormatString></ddl300_300:FormatString>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy>
@@ -484,6 +680,11 @@
               <ID>Year</ID>
               <Name>Year</Name>
               <SourceAttributeID>Calendar Year</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Quarter</ID>
+              <Name>Quarter</Name>
+              <SourceAttributeID>Quarter</SourceAttributeID>
             </Level>
             <Level>
               <ID>Month</ID>
@@ -507,6 +708,11 @@
               <SourceAttributeID>Calendar Year</SourceAttributeID>
             </Level>
             <Level>
+              <ID>Quarter</ID>
+              <Name>Quarter</Name>
+              <SourceAttributeID>Quarter</SourceAttributeID>
+            </Level>
+            <Level>
               <ID>Month Abbreviation</ID>
               <Name>Month Abbreviation</Name>
               <SourceAttributeID>Short Month</SourceAttributeID>
@@ -526,6 +732,11 @@
               <ID>Year</ID>
               <Name>Year</Name>
               <SourceAttributeID>Calendar Year</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Quarter Year</ID>
+              <Name>Quarter Year</Name>
+              <SourceAttributeID>Quarter Year</SourceAttributeID>
             </Level>
             <Level>
               <ID>Month Year</ID>
@@ -557,6 +768,27 @@
               <ID>Date</ID>
               <Name>Date</Name>
               <SourceAttributeID>Date</SourceAttributeID>
+            </Level>
+          </Levels>
+        </Hierarchy>
+        <Hierarchy>
+          <ID>Hierarchy 4</ID>
+          <Name>Calendar Beginning Time Period</Name>
+          <Levels>
+            <Level>
+              <ID>Year</ID>
+              <Name>Year</Name>
+              <SourceAttributeID>Calendar Year</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Beginning Of Quarter</ID>
+              <Name>Beginning Of Quarter</Name>
+              <SourceAttributeID>Beginning Of Quarter</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Beginning Of Month</ID>
+              <Name>Beginning Of Month</Name>
+              <SourceAttributeID>Beginning Of Month</SourceAttributeID>
             </Level>
           </Levels>
         </Hierarchy>
@@ -2497,7 +2729,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="62" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8715" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="26167" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="62" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8715" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="33443" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -3093,6 +3325,24 @@
             <Attribute>
               <AttributeID>Fiscal Month Label</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Quarter Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Number</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Month</AttributeID>
+            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
@@ -3106,6 +3356,9 @@
             </Hierarchy>
             <Hierarchy>
               <HierarchyID>Hierarchy 3</HierarchyID>
+            </Hierarchy>
+            <Hierarchy>
+              <HierarchyID>Hierarchy 4</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -3147,6 +3400,24 @@
             <Attribute>
               <AttributeID>Fiscal Month Label</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Quarter Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Number</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Month</AttributeID>
+            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
@@ -3160,6 +3431,9 @@
             </Hierarchy>
             <Hierarchy>
               <HierarchyID>Hierarchy 3</HierarchyID>
+            </Hierarchy>
+            <Hierarchy>
+              <HierarchyID>Hierarchy 4</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -3356,6 +3630,24 @@
             <Attribute>
               <AttributeID>Fiscal Month Label</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Quarter Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Number</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Month</AttributeID>
+            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
@@ -3369,6 +3661,9 @@
             </Hierarchy>
             <Hierarchy>
               <HierarchyID>Hierarchy 3</HierarchyID>
+            </Hierarchy>
+            <Hierarchy>
+              <HierarchyID>Hierarchy 4</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -3410,6 +3705,24 @@
             <Attribute>
               <AttributeID>Fiscal Month Label</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Quarter Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Number</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Month</AttributeID>
+            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
@@ -3423,6 +3736,9 @@
             </Hierarchy>
             <Hierarchy>
               <HierarchyID>Hierarchy 3</HierarchyID>
+            </Hierarchy>
+            <Hierarchy>
+              <HierarchyID>Hierarchy 4</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -3488,6 +3804,24 @@
             <Attribute>
               <AttributeID>Fiscal Month Label</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Quarter Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Number</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Quarter</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Beginning Of Month</AttributeID>
+            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
@@ -3501,6 +3835,9 @@
             </Hierarchy>
             <Hierarchy>
               <HierarchyID>Hierarchy 3</HierarchyID>
+            </Hierarchy>
+            <Hierarchy>
+              <HierarchyID>Hierarchy 4</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -5084,7 +5421,7 @@ END</Status>
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="76" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="104" scrolltop="9347" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29766" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="76" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="104" scrolltop="15579" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="37042" y="22357" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -5095,9 +5432,9 @@ END</Status>
                     <layoutmanager>
                       <ddsxmlobj />
                     </layoutmanager>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="16490" top="21254" logicalid="38" controlid="1" masterid="0" hint1="0" hint2="0" width="4260" height="9128" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Date" left="16490" top="21254" logicalid="38" controlid="1" masterid="0" hint1="0" hint2="0" width="4260" height="12012" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
-                        <ddsxmlobjectstreaminitwrapper binary="000c0000a4100000a8230000" />
+                        <ddsxmlobjectstreaminitwrapper binary="000c0000a4100000ec2e0000" />
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
@@ -5414,7 +5751,7 @@ END</Status>
                         <point x="8281" y="13816" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="13061" top="21019" logicalid="59" controlid="22" masterid="0" hint1="0" hint2="0" width="3729" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="13061" top="21216" logicalid="59" controlid="22" masterid="0" hint1="0" hint2="0" width="3729" height="944" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5428,8 +5765,8 @@ END</Status>
                         </ddsxmlobj>
                       </layoutobject>
                       <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="19" sourceattachpoint="14" destattachpoint="47" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="16490" y="21418" />
-                        <point x="14926" y="21418" />
+                        <point x="16490" y="21760" />
+                        <point x="14926" y="21760" />
                         <point x="14926" y="21516" />
                         <point x="13361" y="21516" />
                       </connector>
@@ -5675,7 +6012,7 @@ END</Status>
                         <point x="1593" y="17833" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="3986" top="21165" logicalid="73" controlid="36" masterid="0" hint1="0" hint2="0" width="12804" height="1203" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="3986" top="21165" logicalid="73" controlid="36" masterid="0" hint1="0" hint2="0" width="12804" height="995" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5688,9 +6025,9 @@ END</Status>
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="34" sourceattachpoint="16" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="16490" y="21968" />
-                        <point x="10388" y="21968" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="34" sourceattachpoint="14" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="16490" y="21760" />
+                        <point x="10388" y="21760" />
                         <point x="10388" y="21465" />
                         <point x="4286" y="21465" />
                       </connector>
@@ -5716,11 +6053,11 @@ END</Status>
                       </connector>
                     </ddscontrol>
                   </dds>
-                </DiagramLayout>
+</DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>104</DiagramViewPortLeft>
-                <DiagramViewPortTop>9347</DiagramViewPortTop>
+                <DiagramViewPortTop>15579</DiagramViewPortTop>
                 <DiagramBoundingLeft>0</DiagramBoundingLeft>
                 <DiagramBoundingTop>0</DiagramBoundingTop>
                 <DiagramZoom>100</DiagramZoom>
@@ -5805,6 +6142,43 @@ END</Status>
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="34" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Quarter_x0020_Number" msdata:ReadOnly="true" msprop:design-time-name="d57df7ce-88b4-469c-9de7-c30e76cdaf3d" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter Number" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN 1&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN 2&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN 3&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN 4&#xD;&#xA;ELSE 5&#xD;&#xA;END" type="xs:int" />
+                      <xs:element name="Quarter_x0020_Year_x0020_Key" msdata:ReadOnly="true" msprop:design-time-name="73d8f09f-ca0a-4e14-bf84-7849a6edbb83" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter Year Key" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN ([Calendar Year] * 10) + 1&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN ([Calendar Year] * 10) + 2&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN ([Calendar Year] * 10) + 3&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN ([Calendar Year] * 10) + 4&#xD;&#xA;ELSE ([Calendar Year] * 10) + 5&#xD;&#xA;END" type="xs:int" minOccurs="0" />
+                      <xs:element name="Quarter_x0020_Year" msdata:ReadOnly="true" msprop:design-time-name="32b24510-a542-4c0f-b16e-afb6dbff16c1" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter Year" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN 'Q1 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN 'Q2 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN 'Q3 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN 'Q4 ' + CAST([Calendar Year] AS NVARCHAR)&#xD;&#xA;ELSE 'N/A ' + CAST([Calendar Year] AS NVARCHAR) &#xD;&#xA;END" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="34" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Quarter" msdata:ReadOnly="true" msprop:design-time-name="1bce21b6-8ad0-4be5-9941-1575dbbdfa6b" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Quarter" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN 'Q1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN 'Q2'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN 'Q3'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN 'Q4'&#xD;&#xA;ELSE 'N/A' &#xD;&#xA;END">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="3" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Year_x0020_Quarter" msdata:ReadOnly="true" msprop:design-time-name="155b558e-b471-4cb5-bbe2-356ebc9ec713" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Year Quarter" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q2'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q3'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN CAST([Calendar Year] AS NVARCHAR) + '-Q4'&#xD;&#xA;ELSE CAST([Calendar Year] AS NVARCHAR) + '-N/A'&#xD;&#xA;END" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="34" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Beginning_x0020_of_x0020_Quarter" msdata:ReadOnly="true" msprop:design-time-name="650ae3ac-aabf-4eb6-b792-78de5871ae78" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Beginning of Quarter" msprop:ComputedColumnExpression="CASE &#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  1 AND  3 THEN  CAST([Calendar Year] AS VARCHAR) + '-1-1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  4 AND  6 THEN CAST([Calendar Year] AS VARCHAR) + '-4-1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN  7 AND  9 THEN CAST([Calendar Year] AS VARCHAR) + '-7-1'&#xD;&#xA;WHEN [Calendar Month Number] BETWEEN 10 AND 12 THEN CAST([Calendar Year] AS VARCHAR) + '-10-1'&#xD;&#xA;ELSE CAST([Calendar Year] AS VARCHAR) + '/1/1'&#xD;&#xA;END" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="35" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Beginning_x0020_of_x0020_Month" msdata:ReadOnly="true" msprop:design-time-name="c60b73da-d09e-4ace-9c82-b1df5520b39a" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="Beginning of Month" msprop:ComputedColumnExpression="CAST([Calendar Year] AS VARCHAR) + '-' + CAST([Calendar Month Number] AS VARCHAR)+ '-1'" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="63" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
@@ -6347,101 +6721,101 @@ END</Status>
               <xs:field xpath="Purchase_x0020_Key" />
               <xs:field xpath="Date_x0020_Key" />
             </xs:unique>
-            <xs:keyref name="FK_Fact_Purchase_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
+            <xs:keyref name="FK_Fact_Purchase_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
               <xs:selector xpath=".//Fact_Purchase" />
-              <xs:field xpath="Supplier_x0020_Key" />
+              <xs:field xpath="Stock_x0020_Item_x0020_Key" />
             </xs:keyref>
             <xs:keyref name="FK_Fact_Purchase_Date_Key_Dimension_Date" refer="Constraint1">
               <xs:selector xpath=".//Fact_Purchase" />
               <xs:field xpath="Date_x0020_Key" />
             </xs:keyref>
-            <xs:keyref name="FK_Fact_Purchase_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
+            <xs:keyref name="FK_Fact_Purchase_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
               <xs:selector xpath=".//Fact_Purchase" />
-              <xs:field xpath="Stock_x0020_Item_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Order_Picked_Date_Key_Dimension_Date" refer="Constraint1">
-              <xs:selector xpath=".//Fact_Order" />
-              <xs:field xpath="Picked_x0020_Date_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Order_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
-              <xs:selector xpath=".//Fact_Order" />
-              <xs:field xpath="Salesperson_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Order_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
-              <xs:selector xpath=".//Fact_Order" />
-              <xs:field xpath="Customer_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Order_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
-              <xs:selector xpath=".//Fact_Order" />
-              <xs:field xpath="City_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Order_Order_Date_Key_Dimension_Date" refer="Constraint1">
-              <xs:selector xpath=".//Fact_Order" />
-              <xs:field xpath="Order_x0020_Date_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Order_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
-              <xs:selector xpath=".//Fact_Order" />
-              <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+              <xs:field xpath="Supplier_x0020_Key" />
             </xs:keyref>
             <xs:keyref name="FK_Fact_Order_Picker_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
               <xs:selector xpath=".//Fact_Order" />
               <xs:field xpath="Picker_x0020_Key" />
             </xs:keyref>
-            <xs:keyref name="FK_Fact_Transaction_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
-              <xs:selector xpath=".//Fact_Transaction" />
+            <xs:keyref name="FK_Fact_Order_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
+              <xs:selector xpath=".//Fact_Order" />
+              <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Order_Order_Date_Key_Dimension_Date" refer="Constraint1">
+              <xs:selector xpath=".//Fact_Order" />
+              <xs:field xpath="Order_x0020_Date_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Order_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
+              <xs:selector xpath=".//Fact_Order" />
+              <xs:field xpath="City_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Order_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+              <xs:selector xpath=".//Fact_Order" />
               <xs:field xpath="Customer_x0020_Key" />
             </xs:keyref>
-            <xs:keyref name="FK_Fact_Transaction_Transaction_Type_Key_Dimension_Transaction_x0020_Type" refer="Dimension_Transaction_x0020_Type_Constraint1">
-              <xs:selector xpath=".//Fact_Transaction" />
-              <xs:field xpath="Transaction_x0020_Type_x0020_Key" />
+            <xs:keyref name="FK_Fact_Order_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
+              <xs:selector xpath=".//Fact_Order" />
+              <xs:field xpath="Salesperson_x0020_Key" />
             </xs:keyref>
-            <xs:keyref name="FK_Fact_Transaction_Date_Key_Dimension_Date" refer="Constraint1">
-              <xs:selector xpath=".//Fact_Transaction" />
-              <xs:field xpath="Date_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Transaction_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
-              <xs:selector xpath=".//Fact_Transaction" />
-              <xs:field xpath="Supplier_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Transaction_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
-              <xs:selector xpath=".//Fact_Transaction" />
-              <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
+            <xs:keyref name="FK_Fact_Order_Picked_Date_Key_Dimension_Date" refer="Constraint1">
+              <xs:selector xpath=".//Fact_Order" />
+              <xs:field xpath="Picked_x0020_Date_x0020_Key" />
             </xs:keyref>
             <xs:keyref name="FK_Fact_Transaction_Payment_Method_Key_Dimension_Payment_x0020_Method" refer="Dimension_Payment_x0020_Method_Constraint1">
               <xs:selector xpath=".//Fact_Transaction" />
               <xs:field xpath="Payment_x0020_Method_x0020_Key" />
             </xs:keyref>
+            <xs:keyref name="FK_Fact_Transaction_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+              <xs:selector xpath=".//Fact_Transaction" />
+              <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Transaction_Supplier_Key_Dimension_Supplier" refer="Dimension_Supplier_Constraint1">
+              <xs:selector xpath=".//Fact_Transaction" />
+              <xs:field xpath="Supplier_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Transaction_Date_Key_Dimension_Date" refer="Constraint1">
+              <xs:selector xpath=".//Fact_Transaction" />
+              <xs:field xpath="Date_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Transaction_Transaction_Type_Key_Dimension_Transaction_x0020_Type" refer="Dimension_Transaction_x0020_Type_Constraint1">
+              <xs:selector xpath=".//Fact_Transaction" />
+              <xs:field xpath="Transaction_x0020_Type_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Transaction_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+              <xs:selector xpath=".//Fact_Transaction" />
+              <xs:field xpath="Customer_x0020_Key" />
+            </xs:keyref>
             <xs:keyref name="FK_Fact_Stock_Holding_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
               <xs:selector xpath=".//Fact_Stock_x0020_Holding" />
               <xs:field xpath="Stock_x0020_Item_x0020_Key" />
             </xs:keyref>
-            <xs:keyref name="FK_Fact_Sale_Delivery_Date_Key_Dimension_Date" refer="Constraint1">
+            <xs:keyref name="FK_Fact_Sale_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
               <xs:selector xpath=".//Fact_Sale" />
-              <xs:field xpath="Delivery_x0020_Date_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Sale_Invoice_Date_Key_Dimension_Date" refer="Constraint1">
-              <xs:selector xpath=".//Fact_Sale" />
-              <xs:field xpath="Invoice_x0020_Date_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Sale_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
-              <xs:selector xpath=".//Fact_Sale" />
-              <xs:field xpath="Stock_x0020_Item_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Sale_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
-              <xs:selector xpath=".//Fact_Sale" />
-              <xs:field xpath="City_x0020_Key" />
-            </xs:keyref>
-            <xs:keyref name="FK_Fact_Sale_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
-              <xs:selector xpath=".//Fact_Sale" />
-              <xs:field xpath="Salesperson_x0020_Key" />
+              <xs:field xpath="Customer_x0020_Key" />
             </xs:keyref>
             <xs:keyref name="FK_Fact_Sale_Bill_To_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
               <xs:selector xpath=".//Fact_Sale" />
               <xs:field xpath="Bill_x0020_To_x0020_Customer_x0020_Key" />
             </xs:keyref>
-            <xs:keyref name="FK_Fact_Sale_Customer_Key_Dimension_Customer" refer="Dimension_Customer_Constraint1">
+            <xs:keyref name="FK_Fact_Sale_Salesperson_Key_Dimension_Employee" refer="Dimension_Employee_Constraint1">
               <xs:selector xpath=".//Fact_Sale" />
-              <xs:field xpath="Customer_x0020_Key" />
+              <xs:field xpath="Salesperson_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Sale_City_Key_Dimension_City" refer="Dimension_City_Constraint1">
+              <xs:selector xpath=".//Fact_Sale" />
+              <xs:field xpath="City_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Sale_Stock_Item_Key_Dimension_Stock_x0020_Item" refer="Dimension_Stock_x0020_Item_Constraint1">
+              <xs:selector xpath=".//Fact_Sale" />
+              <xs:field xpath="Stock_x0020_Item_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Sale_Invoice_Date_Key_Dimension_Date" refer="Constraint1">
+              <xs:selector xpath=".//Fact_Sale" />
+              <xs:field xpath="Invoice_x0020_Date_x0020_Key" />
+            </xs:keyref>
+            <xs:keyref name="FK_Fact_Sale_Delivery_Date_Key_Dimension_Date" refer="Constraint1">
+              <xs:selector xpath=".//Fact_Sale" />
+              <xs:field xpath="Delivery_x0020_Date_x0020_Key" />
             </xs:keyref>
           </xs:element>
         </xs:schema>
